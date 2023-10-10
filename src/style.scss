@@ -1,0 +1,616 @@
+$lightGreen: #b9e7e7;
+
+.App{
+    display: flex;
+    justify-content: center;
+    .container{
+        width: 1024px;
+
+        .link{
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .auth{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: $lightGreen;
+
+            h1{
+                font-size: 20px;
+                color: teal;
+                margin-bottom: 20px;
+            }
+
+            form{
+                display: flex;
+                flex-direction: column;
+                padding: 50px;
+                background-color: white;
+                width: 200px;
+                gap: 20px;
+
+                input{
+                    padding: 10px;
+                    border: none;
+                    border-bottom:1px solid gray ;
+                }
+
+                button{
+                    padding: 10px;
+                    border: none;
+                    background-color: teal;
+                    cursor: pointer;
+                    color: white;
+                }
+
+                p{
+                    font-size: 12px;
+                    color: red;
+                    text-align: center;
+                }
+
+                span{
+                    font-size: 12px;
+                    text-align: center;
+                }
+            }
+        }
+
+
+        //NAVBAR STYLES
+
+        .navbar{
+            .container{
+                height: 70px;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                box-shadow: 0 3px 10px rgb(0, 0, 0.7);
+                background-color: #fff;
+                width: 100%;
+                top: 0;
+                left:0;
+                right:0;
+                position: fixed;
+                z-index: 1;
+                .logo{
+                    background-color: rgb(152, 226, 250);
+                    width: 85px;
+                    height: 70px;
+                    border-radius: 50%;
+
+                    .logo-link{
+                        text-decoration: none;
+                        color: black;
+                        font-size: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        margin-top: 13px; 
+                        
+                        .manuel{
+                            font-size: 13px;
+                            margin-bottom: 6px;
+                        }
+                        .tech{
+                            font-style: italic;
+                        }
+                    }
+
+                }
+                .links{
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+                    color: midnightblue;
+
+                    .login{
+                        margin-left: -30%;
+                        color: rgb(37, 138, 172);
+                        font-weight: 700;
+                    }
+
+                   .profile{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                   
+                   
+                    
+
+                    .profile-details{
+                        height: 13.5vh;
+                        width: 8vw;
+                        box-shadow: 0 3px 10px rgb(0, 0, 0.7);
+                        background-color: #fff;
+                        position: absolute;
+                        margin-top: 10.5%;
+                        border-radius: 5px;
+                        display: flex;
+                        flex-direction: column;
+                        cursor: pointer;
+
+                        span{
+                            text-decoration: none;
+                            color: #192a56;
+                            text-align: center;
+                            margin: 2.5px;
+
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+
+                    .profile-btn{
+                        background-color: rgb(152, 226, 250);
+                        width: 42px;
+                        height:42px;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-weight: 300;
+                        border: 1px solid white;
+                        position: relative;
+                        border: 1px solid #192a56;
+                        margin-left: -60%;
+                        color: #fff;
+                        font-size: 21px;
+                        margin-left: 0.01%;
+                    }
+                   }
+
+
+                    h6{
+                       font-size: 16px;
+                       font-weight: 300; 
+                    }
+
+                    span{
+                        cursor: pointer;
+                    }
+
+                    .write{
+                        // background-color: rgb(152, 226, 250);
+                        width: 58px;
+                        height:36px;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-weight: 300;
+                        border: 1px solid white;
+                        margin-left: -2%;
+
+                        :hover{
+                            color: teal;
+                            background-color: white;
+                            border: 1px solid teal;
+                            width: 45px;
+                            height:45px;
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-weight: 300;
+                        }
+                    }
+                }
+            }
+        }
+
+        ///FOOTER STYLES
+
+        .footer{
+            .footer-container{
+                height: 38vh;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                box-shadow: 0 3px 10px rgb(0, 0, 0.7);
+                background-color: #fff;
+                width: 100%;
+                margin-top: 5%;
+                right: 0;
+                position: absolute;
+                
+                
+
+                .logo{
+                    background-color: rgb(152, 226, 250);
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                    margin-top: -3%;
+
+                    .logo-link{
+                        text-decoration: none;
+                        color: black;
+                        font-size: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        margin-top: 13px; 
+                        
+                        .manuel{
+                            font-size: 22px;
+                            margin-bottom: 6px;
+                            font-weight: 600;
+                            margin-top: 23%;
+                        }
+                        .tech{
+                            font-style: oblique;
+                            font-size: 10px;
+                            margin-top: 4px;
+                        }
+                        .connect{
+                           margin-top: -8px;
+                        }
+                    }
+                    .social-media{
+                        display: flex;
+                        margin-top: 40%;
+    
+                        .facebook{
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            background-color: #3B5999;
+                            color: white;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            cursor: pointer;
+                            margin: 2px;
+                        }
+                        .instagram{
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            background-color: #E4405F;
+                            color: white;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            cursor: pointer;
+                            margin: 2px;
+                        }
+                        .pinterest{
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            background-color: #E60023;
+                            color: white;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            cursor: pointer;
+                            margin: 2px;
+                        }
+                        .twitter{
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            background-color: #55ACEE;
+                            color: white;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            cursor: pointer;
+                            margin: 2px;
+                        }
+                    }
+                }
+
+                .useful-links{
+                    display: flex;
+                    flex-direction: column;
+                    text-align: justify;
+                 
+                    
+                   a{
+                    text-decoration: none;
+                    margin-bottom: 7px;
+                    color:#192a56;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                   }
+                }
+
+                .contact{
+                    .contact-item{
+                        margin-bottom: 20px;
+                        display: flex;
+                        align-items: center;
+                        color:#192a56;
+                    }
+                }
+
+            }
+        }
+                
+
+
+        //HOME STYLES
+
+        .home{
+            .posts{
+                margin-top: 130px;
+                display: flex;
+                flex-direction: column;
+                gap: 150px;
+
+                .post{
+                    display: flex;
+                    gap: 100px;
+
+                    &:nth-child(2n+1){
+                        flex-direction: row-reverse;
+                    }
+                    .img{
+                        flex: 2;
+                        position: relative;
+                        margin-top: 30px;
+
+                        &::after{
+                            content: "";
+                            width: 120%;
+                            min-height: 250px;
+                            background-color: rgb(152, 226, 250);
+                            position: absolute;
+                            top: 20px;
+                            left: -20px;
+                            z-index: -1;
+                        }
+                        img{
+                            width: 110%;
+                            max-height: 400px;
+                            object-fit: cover;
+                            border: 2px solid rgb(152, 226, 250);
+                        }
+                    }
+
+                    .content{
+                        flex: 3;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        margin: 20px;
+
+                        h1{
+                            font-size: 48px;
+                            color: #192a56;
+                        }
+
+                        p{
+                            font-size: 18px;
+                            text-align: justify;
+                            margin-top: -3%;
+                            line-height: 30px;
+                        }
+
+                        button{
+                            width: max-content;
+                            padding: 10px 20px;
+                            border: none;
+                            cursor: pointer;
+                            background-color: white;
+                            border: 1.2px solid rgb(152, 226, 250);
+                            color: teal;
+
+                            &:hover{
+                                border: 1px solid white;
+                                background-color: rgb(152, 226, 250);
+                                color:white;
+                            }
+
+                            .btn-link{
+                                text-decoration: none;
+                                color: black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        //SINGLE STYLES
+
+        .single{
+            display: flex;
+            gap: 50px;
+            margin-top: 15%;
+
+            .content{
+                flex: 5;
+                display: flex;
+                flex-direction:column;
+                
+                .post-img{
+                    width: 100%;
+                    height: 300px;
+                    object-fit: cover;
+                    border: 2px solid rgb(152, 226, 250);
+                }
+                .user{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    font-size: 14px;
+                    img{
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+
+                    .span{
+                        font-weight:bold ;
+                    }
+                }
+                .edit{
+                    display: flex;
+                    gap: 5px;
+
+                    img{
+                        width: 20px;
+                        height: 20px;
+                        cursor: pointer;
+                    }
+                }
+                
+                h1{
+                   font-size:42px ;
+                   color: #192a56; 
+                }
+
+                p{
+                    text-align: justify;
+                    line-height: 30px;
+                }
+
+            }
+
+            .menu{
+                flex: 2;
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+                margin-left: 10%;
+
+                h1{
+                    font-size: 20px;
+                    color: #192a56;
+                }
+
+                .post{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    .menu-img{
+                        width: 100%;
+                        height: 200px;
+                        object-fit: cover;
+                        border: 2px solid rgb(152, 226, 250);
+                    }
+
+                    h2{
+                        color:#192a56;
+                    }
+
+                    button{
+                        width: max-content;
+                        padding: 10px 20px;
+                        border: none;
+                        cursor: pointer;
+                        background-color: white;
+                        border: 1px solid rgb(152, 226, 250);
+                        color: teal;
+
+                        &:hover{
+                            border: 1px solid white;
+                            background-color: $lightGreen;
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+         // WRITE PAGE STYLES
+        .add{
+            margin-top: 15%;
+            display: flex;
+            gap: 20px;
+            margin-bottom: 15%;
+
+            .content{
+                flex: 5;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                input{
+                    padding: 10px;
+                    border: 1px solid lightgrey;
+                }
+
+                .editorContainer{
+                    height: 300px;
+                    overflow: scroll;
+                    border: 1px solid lightgray;
+
+                    .editor{
+                        height: 100%;
+                        border: none;
+                    }
+                }
+            }
+
+            .menu{
+                flex: 2;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .item{
+                    border: 1px solid lightgray;
+                    padding: 10px;
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    font-size: 12px;
+                    color: #555;
+
+                    h1{
+                        font-size: 20px;
+                    }
+
+                    .file{
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+
+                    .buttons{
+                        display: flex;
+                        justify-content: space-between;
+
+                        :first-child{
+                            cursor: pointer;
+                            color: teal;
+                            background-color: white;
+                            border: 1px solid teal;
+                            padding: 3px 5px;
+                        }
+
+                        :last-child{
+                            cursor: pointer;
+                            color: white;
+                            background-color: teal;
+                            border: 1px solid teal;
+                            padding: 3px 5px;
+                        }
+                    }
+
+                    .cat{
+                        display: flex;
+                        color: teal;
+                        gap: 2px;
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+    }
+}
